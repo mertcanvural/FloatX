@@ -60,7 +60,6 @@ floatx doubleToFloatx(double val, int totBits, int expBits)
 
   if (bias <= 0x0)
   {
-    printf("here");
     // Subnormal number
     int shiftCount = 0;
     while ((dblFraction & (1L << 52)) == 0)
